@@ -1,0 +1,14 @@
+keyword : sentence that will be the response
+beer : My favourite beer is Bud Light, I am also sponsered by them
+food : I love chicken tenders 
+example : example
+example : example
+example : example
+example : example
+example : example
+example : example
+example : example
+example : example
+example : example
+example : example
+example : example
