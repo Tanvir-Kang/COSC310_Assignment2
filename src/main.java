@@ -6,6 +6,7 @@ public class main extends Response {
 		System.out.println("Greetings user, please take a look at the following options to talk about,");
 		
 		System.out.println(r.greeting());
+		r.loadResponses();
 	}
 
 }
