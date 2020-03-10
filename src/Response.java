@@ -43,7 +43,6 @@ public class Response {
 				String[] entry = s.split("\\:");
 				responses.put(entry[0],entry[1]);
 			}
-			
 			}
 		catch(Exception e) {
 				System.out.println(e);
