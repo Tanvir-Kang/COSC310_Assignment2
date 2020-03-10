@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.HashMap; 
 public class Response {
 	
-	HashMap<String,String> responses = new HashMap<>();
+	static HashMap<String,String> responses = new HashMap<>();
 
 	
 	public String greeting() {
@@ -41,8 +41,12 @@ public class Response {
 
 			while( (s = br.readLine())!=null) {
 				String[] entry = s.split("\\:");
-				responses.put(entry[0],entry[1]);
+				String one = entry[0].trim();
+				String two = entry[1].trim();
+				responses.put(one,two);
 			}
+			System.out.println(responses.keySet());
+			System.out.println(responses.values());
 			}
 		catch(Exception e) {
 				System.out.println(e);
