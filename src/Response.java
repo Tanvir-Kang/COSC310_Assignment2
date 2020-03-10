@@ -2,15 +2,15 @@ import java.io.*;
 public class Response {
 	
 	public String greeting() {
-		String greetingSentence="";
+		StringBuilder greetingSentence = new StringBuilder();
 		String s;
 		try {
 			File file = new File("src/greeting.txt");
 			BufferedReader br = new BufferedReader(new FileReader(file));
 			while( (s = br.readLine())!=null) {
-				greetingSentence+=s;
+				greetingSentence.append(s);
 			}
-			System.out.println(greetingSentence);
+			
 			}
 			catch(Exception e) {
 				System.out.println(e);
@@ -19,7 +19,7 @@ public class Response {
 			}
 
 			
-		return null;
+		return greetingSentence.toString();
 		
 	}
 	
