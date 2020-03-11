@@ -19,7 +19,7 @@ public class Response {
 			}
 		catch(Exception e) {
 				System.out.println(e);
-				System.out.println("Cannot find greeting file specified");
+				System.out.println("Cannot find the greeting file specified");
 				
 			}
 		
