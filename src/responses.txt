@@ -1,14 +1,34 @@
-keyword : sentence that will be the response
-beer:My favourite beer is Bud Light, I am also sponsered by them
-food:I love chicken tenders 
-example:example
-example:example
-example : example
-example : example
-example : example
-example : example
-example : example
-example : example
-example : example
-example : example
-example : example
+fullname : My full name is Austin Richard Post!
+born : I was born in Syracuse, New York and moved to Grapevine, Texas when I was nine years old!
+single : My first single was White Iverson.
+first : Stoney was my first album and was released in 2016.
+second : Beerbongs & Bentleys was my second album, and that was released in 2018.
+grammy : I was nominated for a grammy in 2018 for Rockstar and Psycho.
+festival : I have my own festival called Posty Fest that's held at the Dos Equis Pavillion!
+latest : Hollywood's Bleeding is my most recent album I've released!
+beer : My favourite beer is Bud Light, they sold their beer with my face on it!
+records : In total, I've sold over 65 million records in the US.
+diamond : I have one song that has received diamond certification, which is Congratulations.
+birthdate : My birthday is July 4, 1995.
+guitar : I first got into guitar when I played guitar hero, and decided to try learning a real one. It's paid off a bit.
+name : when I was 15 I got my rap name from an online rap name generator, when I put in my name it generator Post Malone.
+college : I went to college but dropped out after a semester because it wasn't for me.
+la : I moved to LA when I dropped out of college and lived on my buddies couch who was a professional online game streamer.
+label : I signed my first record deal with Republic Records in August 2015 after releasing White Iverson.
+tattoos : I have too many tattoos, I've lost count.
+favourite : My favourite song I've released is Psycho.
+grammies : I've received a total of 6 grammy nominations.
+shoes : My favourite shoe brand is crocs.
+tour : I'm currently on the second-leg of my 'On The Run' tour!
+influence : One of my biggest influences is Bob Dylan.
+highschool : I was voted 'most likely to be famous' in my highschool.
+work : I worked at Chicken Express for 2 years before pursuing music.
+drink : My favourite drink is Beer.
+football : My favourite football player is Dak Prescott. Go Cowboys!
+travel : My favourite place to travel to is definitely Austrailia!
+games : I play video games, I really like call of duty and PUBG!
+postmates : I spent $40,000 on postmates last year. I like food.
+band : I tried to join a band once, but I got rejected when my guitar strings broke during my audition.
+zodiac : My zodiac sign is a Cancer!
+fasion : I love fashion. I love Saint Laurent and keeping up with new fashion trends.
+hockey : My favourite hockey team is the Dallas Stars!
