@@ -45,8 +45,6 @@ public class Response {
 				String two = entry[1].trim();
 				responses.put(one,two);
 			}
-			System.out.println(responses.keySet());
-			System.out.println(responses.values());
 			}
 		catch(Exception e) {
 				System.out.println(e);

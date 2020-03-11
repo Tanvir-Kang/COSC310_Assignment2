@@ -13,10 +13,19 @@ public class main extends Response {
 		Response r = new Response();
 		r.loadResponses();
 		System.out.println(r.greeting());
+		do {
+			listOfResponses.clear();
 		receiveInput();
 		parseInput(input);
+		if(listOfResponses.isEmpty()) {
+			System.out.println("Sorry bud I dunno what to say");
+		}
+		else {
 		System.out.println(listOfResponses);
-	}
+		}
+		}
+		while(true);
+		}
 	
 	
 	private static void parseInput(String in) {
@@ -37,6 +46,7 @@ public class main extends Response {
 	public static String receiveInput() {
 		
 		do {
+			System.out.println("Ask Post something: ");
 			input = in.nextLine();
 		}
 		while(input==null || input=="" || input.isEmpty());
