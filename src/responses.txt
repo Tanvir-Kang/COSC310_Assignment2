@@ -32,3 +32,7 @@ band : I tried to join a band once, but I got rejected when my guitar strings br
 zodiac : My zodiac sign is a Cancer!
 fasion : I love fashion. I love Saint Laurent and keeping up with new fashion trends.
 hockey : My favourite hockey team is the Dallas Stars!
+height : I am 6 feet tall. Not too tall not too short!
+job : I started out as a wedding DJ but I really wanted to be a metal guitarist. 
+fear : my biggest fear is definitely flying. One time in 2018, on my way to London, 2 of the plane’s tires burst during takeoff and my anxiety was through the roof! We made it out ok though.
+hobbies : I don’t really have regular “hobbies” but I do have a loafer collection. When I was working at Chicken Express, I once saved up enough to buy an $800 pair of Versace loafers!
