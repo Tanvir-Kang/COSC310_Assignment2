@@ -13,7 +13,7 @@ public class Response {
 			BufferedReader br = new BufferedReader(new FileReader(file));
 
 			while( (s = br.readLine())!=null) {
-				greetingSentence.append(s);
+				greetingSentence.append(s + " ");
 			}
 			
 			}
