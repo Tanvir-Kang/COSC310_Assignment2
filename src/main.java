@@ -27,6 +27,7 @@ public class main extends Response {
 		while(true);
 		}
 	
+	
 	private static void parseInput(String in) {
 		String[] input = in.split(" ");
 		
