@@ -29,7 +29,7 @@ public class main extends Response {
 		}
 		while(true);
 		}
-	
+
 	public static void POSTagging() {
 										
 		tagging tag = new tagging();//instantiate the new tagging class, will be able to send string to get tagged
@@ -64,9 +64,7 @@ public class main extends Response {
 		}
 			
 		}
-			
-	
-	
+
 	private static void parseInput(String in) {
 		String[] input = in.split(" ");
 		
