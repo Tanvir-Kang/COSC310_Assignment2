@@ -132,7 +132,14 @@ public class main extends Response {
 	        				
 	        			}
 	        			 else {
-	        				 resp1.setText("<html><font color = 'red'>"+ "Sorry bud I dunno what to say" +"</font></html>");
+	        				 String[] randomResponses = new String[5];
+	        					randomResponses[0] = "Sorry, I don't think I understand you.";
+	        					randomResponses[1] = "I don't think I get what you're saying.";
+	        					randomResponses[2] = "What do you mean by that?";
+	        					randomResponses[3] = "It's hard to say honestly, I'll have to think about that.";
+	        					randomResponses[4] = "I'm not sure, can you elaborate on that?";
+	        					int randomNum = (int) (Math.random() * 5);
+	        				 resp1.setText("<html><font color = 'red'>"+ randomResponses[randomNum] +"</font></html>");
 	        				    oldResp.add(resp1.getText());
 		        				oldQues.add(userLabel1.getText());
 	        				 if(count > 1) {
@@ -160,7 +167,14 @@ public class main extends Response {
 		receiveInput();
 		parseInput(input);
 		if(listOfResponses.isEmpty()) {
-			System.out.println("Sorry bud I dunno what to say");
+			String[] randomResponses = new String[5];
+			randomResponses[0] = "Sorry, I don't think I understand you.";
+			randomResponses[1] = "I don't think I get what you're saying.";
+			randomResponses[2] = "What do you mean by that?";
+			randomResponses[3] = "It's hard to say honestly, I'll have to think about that.";
+			randomResponses[4] = "I'm not sure, can you elaborate on that?";
+			int randomNum = (int) (Math.random() * 5);
+			System.out.println(randomResponses[randomNum]);
 		}
 		else {
 		System.out.println(listOfResponses);
@@ -196,7 +210,15 @@ public class main extends Response {
 			
 		}
 		if(taggedResponse.isEmpty()) {
-			System.out.println("Sorry bud I dunno what to say");
+			String[] randomResponses = new String[5];
+			randomResponses[0] = "Sorry, I don't think I understand you.";
+			randomResponses[1] = "I don't think I get what you're saying.";
+			randomResponses[2] = "What do you mean by that?";
+			randomResponses[3] = "It's hard to say honestly, I'll have to think about that.";
+			randomResponses[4] = "I'm not sure, can you elaborate on that?";
+			int randomNum = (int) (Math.random() * 5);
+			System.out.println(randomResponses[randomNum]);
+
 		}
 		else {
 		System.out.println(taggedResponse);
