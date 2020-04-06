@@ -6,6 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/NickH/Downloads/stanford-postagger.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Customer/Desktop/stanford-postagger-2011-04-20/stanford-postagger.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

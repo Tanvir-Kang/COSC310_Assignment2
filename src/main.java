@@ -155,10 +155,6 @@ public class main extends Response {
 
 	    });
 		
-		//POSTagging();
-		Response r = new Response();
-		r.loadResponses();
-		System.out.println(r.greeting());
 		do {
 			listOfResponses.clear();
 		receiveInput();
