@@ -167,14 +167,7 @@ public class main extends Response {
 		receiveInput();
 		parseInput(input);
 		if(listOfResponses.isEmpty()) {
-			String[] randomResponses = new String[5];
-			randomResponses[0] = "Sorry, I don't think I understand you.";
-			randomResponses[1] = "I don't think I get what you're saying.";
-			randomResponses[2] = "What do you mean by that?";
-			randomResponses[3] = "It's hard to say honestly, I'll have to think about that.";
-			randomResponses[4] = "I'm not sure, can you elaborate on that?";
-			int randomNum = (int) (Math.random() * 5);
-			System.out.println(randomResponses[randomNum]);
+			System.out.println("Who knows!");
 		}
 		else {
 		System.out.println(listOfResponses);
@@ -210,7 +203,7 @@ public class main extends Response {
 			
 		}
 		if(taggedResponse.isEmpty()) {
-			System.out.println("I don't understand.");
+			System.out.println("Sorry, I don't understand this.");
 
 		}
 		else {
