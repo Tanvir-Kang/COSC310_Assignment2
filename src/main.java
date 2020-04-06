@@ -1,7 +1,34 @@
 import java.util.LinkedList;
 import java.util.Scanner;
+import java.awt.Color;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Scanner;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+
+
+
 
 public class main extends Response {
+	
+	private static JFrame frame;
+	private static JPanel panel;
+	private static JLabel postLabel;
+	private static JLabel resp1;
+	private static JLabel resp2;
+	private static JLabel resp3;
+	private static JLabel greeting;
+	private static JLabel userLabel1;
+	private static JLabel userLabel2;
+	private static JLabel userLabel3;
+	private static JTextField userText;
+	private static int count = 0;
 	
 	static String input = null;
 	static Scanner in = new Scanner(System.in);
@@ -11,6 +38,122 @@ public class main extends Response {
 
 	
 	public static void main(String[] args) {
+		
+		frame = new JFrame(); 
+		panel = new JPanel();
+		frame.setSize(550, 500);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		panel.setBackground(Color.white);
+		frame.add(panel);
+		
+		panel.setLayout(null);
+	
+		postLabel = new JLabel("<html><font color='Gray'>Post Malone: </font></html>");
+		postLabel.setFont(postLabel.getFont().deriveFont(18f));
+		postLabel.setBounds(10,40,200,25);
+		panel.add(postLabel);
+		
+		Response r = new Response();
+		r.loadResponses();
+		System.out.println(r.greeting());
+		
+		greeting = new JLabel("");
+		greeting.setText("<html>"+ r.greeting() +"</html>");
+		greeting.setBounds(20,60,300,100);
+		panel.add(greeting);
+		
+		userLabel3 = new JLabel("<html>"+""+"</html>");
+		userLabel3.setBounds(300,100,190,100);
+		panel.add(userLabel3);
+		
+		resp3 = new JLabel("");
+		resp3.setBounds(20,140,300,100);
+		panel.add(resp3);
+		
+		userLabel2 = new JLabel("<html>"+""+"</html>");
+		userLabel2.setBounds(300,180,190,100);
+		panel.add(userLabel2);
+		
+		resp2 = new JLabel("");
+		resp2.setBounds(20,220,300,100);
+		panel.add(resp2);
+		
+		userLabel1 = new JLabel("<html>"+""+"</html>");
+		userLabel1.setBounds(300,260,190,100);
+		panel.add(userLabel1);
+		
+		resp1 = new JLabel("");
+		resp1.setBounds(20,300,300,100);
+		panel.add(resp1);
+		
+		
+		userText = new JTextField(20);
+		userText.setBounds(20,400,400,25);
+		panel.add(userText);
+		
+		ArrayList<String> oldResp = new ArrayList<String>(5);
+		ArrayList<String> oldQues = new ArrayList<String>(5);
+		 
+		frame.setVisible(true);
+		
+		userText.addKeyListener(new KeyAdapter() {
+	        @Override
+	        public void keyPressed(KeyEvent e) {
+	            if(e.getKeyCode() == KeyEvent.VK_ENTER){
+	            	greeting.setText("");
+	            	listOfResponses.clear();
+	            	String[] guiInput = userText.getText().split(" ");
+	            	userLabel1.setText("<html>"+ userText.getText() +"</html>");
+	            	userText.setText("");
+	            	count += 1;
+	            	for(int i=0; i < guiInput.length; i++) {
+	        			String refined = guiInput[i].replaceAll("\\s+", "");
+	        			String refined2 = refined.replaceAll("[^a-zA-Z ]", "").toLowerCase();
+	        	
+	        			
+	        			
+	        			 if(responses.keySet().contains(refined2)) {
+	        				hasResponse=true;
+	        				listOfResponses.add(responses.get(refined2));
+	        				
+	        				resp1.setText("<html><font color='Gray'>"+ listOfResponses +"</font></html>");
+	        				oldResp.add(resp1.getText());
+	        				oldQues.add(userLabel1.getText());
+	        				if(count > 1) {
+		        				
+	        					resp2.setText("<html><font color='Gray'>"+ oldResp.get(count-2) +"</font></html>");
+	        					userLabel2.setText(oldQues.get(count-2));
+		        			 }
+	        				if(count > 2) {
+	        					resp3.setText("<html><font color='Gray'>"+ oldResp.get(count-3) +"</font></html>");
+	        					userLabel3.setText(oldQues.get(count-3));
+	        					
+	        				}
+	        				
+	        			}
+	        			 else {
+	        				 resp1.setText("<html><font color = 'red'>"+ "Sorry bud I dunno what to say" +"</font></html>");
+	        				    oldResp.add(resp1.getText());
+		        				oldQues.add(userLabel1.getText());
+	        				 if(count > 1) {
+			        				
+		        					resp2.setText("<html><font color='Gray'>"+ oldResp.get(count-2) +"</font></html>");
+		        					userLabel2.setText(oldQues.get(count-2));
+			        			 }
+		        				if(count > 2) {
+		        					resp3.setText("<html><font color='Gray'>"+ oldResp.get(count-3) +"</font></html>");
+		        					userLabel3.setText(oldQues.get(count-3));
+		        					
+		        				}
+	        			
+	        		}
+	     
+	            	}
+	            	
+	            }
+	        }
+
+	    });
 		
 		//POSTagging();
 		Response r = new Response();
