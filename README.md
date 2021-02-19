@@ -1,4 +1,4 @@
-# COSC310_Assignment2
+# Celebrity Chatbot
 A Chatbot with various functionalities such as synonym recognition, GUI, spelling tolerance.   
 The purpose of this project was to create a chatbot for answering questions about the life of famous music artist Post Malone. The chatbot was coded in Java as it was the language that all collaborators were familiar with. 
 The Java code is organized into 2 classes that use 2 separate text files for both greeting the user and looking up responses to user input, named greeting.txt and responses.txt respectively. 
